@@ -1,14 +1,14 @@
 Algoritmo "horas correspondentes"
-// Descrição   : digite a hora e diga, bomdia, boatarde ou boanoite
+// DescriÃ§Ã£o   : digite a hora e diga, bomdia, boatarde ou boanoite
 // Autor(a)    : Ellen e Alice
 // Data atual  : 23/05/2022
 Var
-// Seção de Declarações das variáveis 
+// SeÃ§Ã£o de DeclaraÃ§Ãµes das variÃ¡veis 
 
       hora: real
 
 Inicio
-// Seção de Comandos, procedimento, funções, operadores, etc... 
+// SeÃ§Ã£o de Comandos, procedimento, funÃ§Ãµes, operadores, etc... 
 
       escreva("Por favor, informe a hora: ")
       leia(hora)
