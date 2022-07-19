@@ -1,27 +1,27 @@
 Algoritmo "idade correspondente"
-// Descrição   : digite a idade e informe a faixa etaria
+// DescriÃ§Ã£o   : digite a idade e informe a faixa etaria
 // Autor(a)    : Ellen e Alice
 // Data atual  : 23/05/2022
 Var
-// Seção de Declarações das variáveis 
+// SeÃ§Ã£o de DeclaraÃ§Ãµes das variÃ¡veis 
 
       idade: inteiro
 
 
 Inicio
-// Seção de Comandos, procedimento, funções, operadores, etc... 
+// SeÃ§Ã£o de Comandos, procedimento, funÃ§Ãµes, operadores, etc... 
 
      escreva("Por favor, informe a sua idade: ")
      leia(idade)
      escreva(" ")
      
      se (idade <= 3) entao
-       escreval("Bebê")
+       escreval("BebÃª")
        
        senao
        
        se (idade <= 12) entao
-         escreval("Criança")
+         escreval("CrianÃ§a")
          
          senao
          
