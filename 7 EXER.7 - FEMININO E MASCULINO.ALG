@@ -1,15 +1,15 @@
 Algoritmo "feminino e masculino"
-// Descrição   : recebe f ou m e diz na tela se e feminino ou masculino
+// DescriÃ§Ã£o   : recebe f ou m e diz na tela se e feminino ou masculino
 // Autor(a)    : Ellen e Alice
 // Data atual  : 23/05/2022
 Var
-// Seção de Declarações das variáveis 
+// SeÃ§Ã£o de DeclaraÃ§Ãµes das variÃ¡veis 
 
       sexo, f, m: caracter
 
 
 Inicio
-// Seção de Comandos, procedimento, funções, operadores, etc... 
+// SeÃ§Ã£o de Comandos, procedimento, funÃ§Ãµes, operadores, etc... 
 
       repita
       escreva("Por favor, digite (F) para Feminino e (M) para Masculino: ")
@@ -17,18 +17,18 @@ Inicio
       ate (sexo = "f") ou (sexo = "F") ou (sexo = "m") ou (sexo = "M")
       
       se (sexo = "f") ou (sexo = "F") entao
-       escreva("Você digitou F para Feminino.")
+       escreva("VocÃª digitou F para Feminino.")
        leia(f)
        
        senao
        
       se (sexo = "m") ou (sexo = "M") entao
-       escreva("Você digitou M para Masculino.")
+       escreva("VocÃª digitou M para Masculino.")
        leia(m)
        
        senao
        
-       escreva("Lamento, código não encontrado.")
+       escreva("Lamento, cÃ³digo nÃ£o encontrado.")
        
        fimse
        fimse
