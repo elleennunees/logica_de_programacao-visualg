@@ -1,15 +1,15 @@
 Algoritmo "media ponderada com resultado final"
-// Descrição   : calcule as 4 notas com os pesos e diga se foi aprovado ou reprovado
+// DescriÃ§Ã£o   : calcule as 4 notas com os pesos e diga se foi aprovado ou reprovado
 // Autor(a)    : Ellen e Alice
 // Data atual  : 23/05/2022
 Var
-// Seção de Declarações das variáveis 
+// SeÃ§Ã£o de DeclaraÃ§Ãµes das variÃ¡veis 
 
       n1, n2, n3, n4, p1, p2, p3, p4, media: real
       
 
 Inicio
-// Seção de Comandos, procedimento, funções, operadores, etc... 
+// SeÃ§Ã£o de Comandos, procedimento, funÃ§Ãµes, operadores, etc... 
 
       escreval("Por Favor, informe as quatros notas: ")
     leia(n1)
@@ -27,7 +27,7 @@ Inicio
     escreval(" ")
     media <- (n1*2.5 + n2*2.5 + n3*3.0 + n4*2.0) / (p1 + p2 + p3 + p4)
 
-    escreval("A média final do aluno é: ", media:2:1)
+    escreval("A mÃ©dia final do aluno Ã©: ", media:2:1)
     
     //resultado na tela se foi aprovado ou reprovado
     repita
@@ -40,12 +40,12 @@ Inicio
       senao
       
       se (media >= 5) e (media < 9) entao
-        escreva("Parabéns, aluno aprovado!")
+        escreva("ParabÃ©ns, aluno aprovado!")
         
         senao
         
         se (media >= 9) entao
-          escreva("Parabéns, aluno aprovado com louvor!")
+          escreva("ParabÃ©ns, aluno aprovado com louvor!")
           
         fimse
       fimse
