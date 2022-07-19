@@ -1,18 +1,18 @@
 Algoritmo "0 a 9"
-// Descrição   : multiplique um número fornecido por uma sequência de 0 a 9
+// DescriÃ§Ã£o   : multiplique um nÃºmero fornecido por uma sequÃªncia de 0 a 9
 // Autor(a)    : Ellen e Alice
 // Data atual  : 23/05/2022
 Var
-// Seção de Declarações das variáveis 
+// SeÃ§Ã£o de DeclaraÃ§Ãµes das variÃ¡veis 
 
       n, i: inteiro
 
 
 
 Inicio
-// Seção de Comandos, procedimento, funções, operadores, etc... 
+// SeÃ§Ã£o de Comandos, procedimento, funÃ§Ãµes, operadores, etc... 
 
-      escreva("Por favor, digite um número: ")
+      escreva("Por favor, digite um nÃºmero: ")
       leia(n)
       
       para i de 0 ate 9 faca
