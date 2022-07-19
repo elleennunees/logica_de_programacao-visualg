@@ -1,15 +1,15 @@
 Algoritmo "media ponderada"
-// Descrição   : receba 4 notas e calcule a media pond. com os pesos correspondentes
+// DescriÃ§Ã£o   : receba 4 notas e calcule a media pond. com os pesos correspondentes
 // Autor(a)    : Ellen e Alice
 // Data atual  : 23/05/2022
 Var
-// Seção de Declarações das variáveis 
+// SeÃ§Ã£o de DeclaraÃ§Ãµes das variÃ¡veis 
 
       n1, n2, n3, n4, p1, p2, p3, p4, media: real
 
 
 Inicio
-// Seção de Comandos, procedimento, funções, operadores, etc... 
+// SeÃ§Ã£o de Comandos, procedimento, funÃ§Ãµes, operadores, etc... 
 
     escreval("Por Favor, informe as quatros notas: ")
     leia(n1)
@@ -27,7 +27,7 @@ Inicio
     escreval(" ")
     media <- (n1*3.5 + n2*3.5 + n3*6.0 + n4*7.0) / (p1 + p2 + p3 + p4)
     
-    escreval("A média final do aluno é: ", media:2:1)
+    escreval("A mÃ©dia final do aluno Ã©: ", media:2:1)
 
 
 
