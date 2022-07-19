@@ -1,0 +1,99 @@
+CREATE TABLE rede (
+Id int(02) NOT NULL AUTO_INCREMENT,
+Nome varchar(45) NOT NULL,
+Venda_total double,
+PRIMARY KEY (Id)
+);
+
+CREATE TABLE posto (
+Id int(03) NOT NULL AUTO_INCREMENT,
+Nome varchar(45) NOT NULL,
+Bandeira varchar(45) NOT NULL,
+RedeId int(02) NOT NULL,
+PRIMARY KEY (Id),
+FOREIGN KEY (RedeId) REFERENCES rede (Id)
+);
+
+CREATE TABLE endereco_posto (
+Logradouro varchar(45) NOT NULL,
+Numero int(05) NOT NULL,
+CEP int(08) NOT NULL,
+Telefone int(11) NOT NULL,
+Cidade varchar(45) NOT NULL,
+Estado varchar(20) NOT NULL,
+FOREIGN KEY (PostoId) REFERENCES posto (Id)
+);
+
+CREATE TABLE cliente (
+CPF int(11) NOT NULL AUTO_INCREMENT,
+Id int(03) NOT NULL AUTO_INCREMENT,
+Nome varchar(45) NOT NULL,
+PRIMARY KEY (CPF),
+FOREIGN KEY (Id)
+);
+ 
+CREATE TABLE endereco_cliente (
+Logradouro varchar(45),
+Numero int(05) NOT NULL,
+CEP int(08) NOT NULL,
+Telefone int(11) NOT NULL,
+Cidade varchar(45) NOT NULL,
+Estado varchar(20) NOT NULL,
+FOREIGN KEY (ClienteId) REFERENCES cliente (Id)
+);
+
+CREATE TABLE funcionario (
+CPF int(11) NOT NULL AUTO_INCREMENT,
+Id int(03) NOT NULL AUTO_INCREMENT,
+Nome varchar(45) NOT NULL,
+PRIMARY KEY (CPF),
+FOREIGN KEY (Id)
+);
+
+CREATE TABLE endereco_funcionario (
+Logradouro varchar(45),
+Numero int(05) NOT NULL,
+CEP int(08) NOT NULL,
+Telefone int(11) NOT NULL,
+Cidade varchar(45) NOT NULL,
+Estado varchar(20) NOT NULL,
+FOREIGN KEY (FuncionarioId) REFERENCES funcionario (Id)
+);
+
+CREATE TABLE bomba (
+Id int(03) NOT NULL AUTO_INCREMENT,
+Codigo int(07) NOT NULL AUTO_INCREMENT,
+Qtd_venda_bomba double,
+Tipo_combustivel varchar(15) NOT NULL,
+PRIMARY KEY (Codigo),
+FOREIGN KEY (Id) REFERENCES posto (Id)
+);
+
+CREATE TABLE vendas (
+Id int(03) NOT NULL AUTO_INCREMENT,
+Id_funcionario int(03) NOT NULL AUTO_INCREMENT,
+PRIMARY KEY (Id),
+FOREIGN KEY (Id_funcionario)
+);
+
+CREATE TABLE tipo_pagamento (
+Cartao_credito double,
+Cartao_debito double,
+Dinheiro double,
+FOREIGN KEY (VendasId) REFERENCES vendas (Id)
+);
+
+CREATE TABLE estoque (
+Id int(03) NOT NULL AUTO_INCREMENT,
+Qtd_combustivel double,
+PRIMARY KEY (Id),
+FOREIGN KEY (BombaId) REFERENCES bomba (Id)
+);
+
+CREATE TABLE pedido_de_compra (
+Id int(03) NOT NULL AUTO_INCREMENT,
+Quantidade double,
+Compra_tipo_combustivel varchar(10) NOT NULL,
+PRIMARY KEY (Id)
+);
+
