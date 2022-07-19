@@ -1,16 +1,16 @@
 Algoritmo "notas de 5 alunos"
-// Descrição   : recebe a nota de 5 alunos e calcula a media
+// DescriÃ§Ã£o   : recebe a nota de 5 alunos e calcula a media
 // Autor(a)    : Ellen e Alice
 // Data atual  : 23/05/2022
 Var
-// Seção de Declarações das variáveis 
+// SeÃ§Ã£o de DeclaraÃ§Ãµes das variÃ¡veis 
 
       n1, n2, n3, n4, n5, media: real
       i: inteiro
 
 
 Inicio
-// Seção de Comandos, procedimento, funções, operadores, etc... 
+// SeÃ§Ã£o de Comandos, procedimento, funÃ§Ãµes, operadores, etc... 
 
       escreval("Por favor, informe as notas: ")
       leia(n1)
@@ -23,7 +23,7 @@ Inicio
       i <- i + 1
       media <- (n1 + n2 + n3 + n4 + n5) / 5)
 
-      escreval("A média das notas obtidas é: ",media:2:2)
+      escreval("A mÃ©dia das notas obtidas Ã©: ",media:2:2)
 
        fimenquanto
 
