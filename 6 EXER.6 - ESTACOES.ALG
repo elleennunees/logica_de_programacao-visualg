@@ -1,18 +1,18 @@
 Algoritmo "estacoes"
-// Descrição   :  informe o codigo de 1 a 4 e diga a estacao
+// DescriÃ§Ã£o   :  informe o codigo de 1 a 4 e diga a estacao
 // Autor(a)    :  Ellen e Alice
 // Data atual  : 23/05/2022
 Var
-// Seção de Declarações das variáveis 
+// SeÃ§Ã£o de DeclaraÃ§Ãµes das variÃ¡veis 
 
       codigo: inteiro
 
 
 Inicio
-// Seção de Comandos, procedimento, funções, operadores, etc... 
+// SeÃ§Ã£o de Comandos, procedimento, funÃ§Ãµes, operadores, etc... 
 
 
-      escreva("Por favor, informe um número de 1 a 4: ")
+      escreva("Por favor, informe um nÃºmero de 1 a 4: ")
       leia(codigo)
       
       
@@ -23,7 +23,7 @@ Inicio
           
           caso 2
            codigo <- 2
-           escreva("Verão!")
+           escreva("VerÃ£o!")
            
            caso 3
             codigo <- 3
@@ -37,12 +37,12 @@ Inicio
        fimescolha
 
              se (codigo <= 0) entao
-              escreva("Código não cadastrado.")
+              escreva("CÃ³digo nÃ£o cadastrado.")
               
               senao
 
               se (codigo >= 5) entao
-               escreva("Código não cadastrado.")
+               escreva("CÃ³digo nÃ£o cadastrado.")
 
               fimse
               
