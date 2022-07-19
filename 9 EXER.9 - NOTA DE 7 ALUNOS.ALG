@@ -1,15 +1,15 @@
 Algoritmo " nota de 7 alunos"
-// Descrição   : recebe a nota de 7 alunos e calcule a media
+// DescriÃ§Ã£o   : recebe a nota de 7 alunos e calcule a media
 // Autor(a)    : Ellen e Alice
 // Data atual  : 23/05/2022
 Var
-// Seção de Declarações das variáveis 
+// SeÃ§Ã£o de DeclaraÃ§Ãµes das variÃ¡veis 
 
       n1, n2, n3, n4, n5, n6, n7, media: real
       i: inteiro
 
 Inicio
-// Seção de Comandos, procedimento, funções, operadores, etc... 
+// SeÃ§Ã£o de Comandos, procedimento, funÃ§Ãµes, operadores, etc... 
 
       escreval("Por favor, informe as notas: ")
       leia(n1)
@@ -24,7 +24,7 @@ Inicio
       i <- i + 1
       media <- (n1 + n2 + n3 + n4 + n5 + n6 + n7) / 7)
 
-      escreval("A média das notas obtidas é: ",media)
+      escreval("A mÃ©dia das notas obtidas Ã©: ",media)
 
       
       fimpara
