@@ -1,0 +1,32 @@
+CREATE TABLE veiculo (
+Id int(11) NOT NULL AUTO_INCREMENT,
+Placa varchar(09) NOT NULL,
+Marca varchar(20) NOT NULL,
+Modelo varchar(20) NOT NULL,
+PRIMARY KEY (Id)
+);
+
+CREATE TABLE funcionario (
+Id int(11) NOT NULL AUTO_INCREMENT,
+Nome varchar(60) NOT NULL,
+Matricula int(08) NOT NULL,
+VeiculoId int(11) NOT NULL,
+PRIMARY KEY (Id),
+FOREIGN KEY (VeiculoId) REFERENCES veiculo (Id)
+);
+
+INSERT INTO veiculo (Placa, Marca, Modelo) VALUES
+('PBI0565', 'FORD', 'FIESTA'),
+('PBI0854', 'FIAT', 'SIENA'),
+('PBC1234', 'VW', 'POLO'),
+('PBZ5685', 'GM', 'ASTRA'),
+('PBO5687', 'JEEP', 'COMPASS');
+
+INSERT INTO funcionario (Nome, Matricula, VeiculoId) VALUES
+('JOSE', '8565', 1),
+('MARIA', '6585', 2),
+('NEUSA', '9895', 2),
+('JOSEFA', '9889', 3),
+('ROBERTA', '6748', 5),
+('PAULO', '3256', 4),
+('NESTOR', '1587', 1);
